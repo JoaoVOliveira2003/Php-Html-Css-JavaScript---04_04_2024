@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header class="home">
+        <!-- navbar -->
+        <nav id="nav">
+            <div class="nav-center">
+                <!-- nav header -->
+                <div class="nav-header">
+                    <img src="./logo.svg" class="logo" alt="logo" />
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- links -->
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scroll-link">home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scroll-link">about</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="scroll-link">services</a>
+                        </li>
+                        <li>
+                            <a href="#tours" class="scroll-link">tours</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Banner-->
+        <div class="banner">
+            <div class="container">
+                <h1>projeto de rolagem</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci rem officia doloribus architecto asperiores quibusdam fuga ab recusandae natus illo? Corporis ad deserunt suscipit reprehenderit ducimus et doloremque? Architecto, molestias!</p>
+                <a href="#tours" class="scroll-link btn btn-white"> Explore tours</a>
+            </div>
+        </div>
+    </header>
+    <!--Sobre-->
+    <section id="about" class="section">
+        <div class="title">
+            <h2>Sobre <span>Nós</span></h2>
+        </div>
+    </section>
+    <!--Serviços-->
+    <section id="services" class="section">
+        <div class="title">
+            <h2>Nossos <span>serviços</span></h2>
+        </div>
+    </section>
+    <!--Contatos-->
+    <section id="tours" class="section">
+        <div class="title">
+            <h2>Passeios em <span>Destaque</span></h2>
+        </div>
+    </section>
+    <!--Rodapé-->
+    <footer class="section">
+        <p>
+            Copyrigth &copy; backroads travel tours company
+            <span id="date"></span> todos direitos reservados
+        </p>
+        <a class="scroll-link top-link" href="#home">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

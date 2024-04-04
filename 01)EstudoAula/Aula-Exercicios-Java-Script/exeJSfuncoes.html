@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Exemplo usando funções</h1>
+  <p id="exe"> -- </p>
+  <p id="data"></p>
+  
+<button type="button" onclick="document.write(5+6)">Clique </button>
+
+
+<script>
+  
+document.getElementById("exe").innerHTML=5+7;
+const d = new Date();
+      const formattedDate = `${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()}`;
+      document.getElementById("data").textContent = formattedDate;
+
+
+</script>
+</body>
+</html>

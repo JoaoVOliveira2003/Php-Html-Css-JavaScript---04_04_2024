@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ 
+ <h1>É br ou não</h1> 
+Qual pais tu nasceu ?
+<input type="text" name="pais" id="pais">
+<input type="button" value="verificar" onclick="calcular()">
+<div id="res"></div>
+
+<script>
+
+function calcular(){
+var paisInput = document.querySelector('input#pais');
+var res = document.querySelector('div#res');
+
+var pais = paisInput.value.toLowerCase();
+
+if(pais == 'brasil' || pais == 'Brasil'){
+res.innerHTML = `Brasileiro carai`;
+}
+else{
+res.innerHTML = `Num é`;
+}
+}
+
+
+</script>
+
+
+</body>
+</html>

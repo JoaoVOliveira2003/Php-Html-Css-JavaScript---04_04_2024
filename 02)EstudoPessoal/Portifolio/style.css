@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bandeiras img {
+  border: 5px solid #D9D9D9;
+  height: 300px;
+  transition: transform 1s, border 1s;
+  width: 400px;
+}
+
+.ladin{
+  margin-left: 50%; /* Ajuste o valor conforme necessário */
+margin-top: -175px;
+}
+
+.bandeiras img:hover {
+  border: 10px solid #D9D9D9;
+  transform: scale(1.1);
+}
+
+.centronome {
+  margin-left: 75px; /* Ajuste o valor conforme necessário */
+}
+
+.centrarimgum {
+  margin-left: 50px; /* Ajuste o valor conforme necessário */
+}
+
+
+
+
+
+.moldura-preta {
+  background-color: #aa98a941;
+  border: 2px solid black;
+  justify-content: center;
+  margin-left: 75%;
+  margin-top: 33px;
+  padding: 10px; /* Adiciona espaço interno para o conteúdo */
+  width: 250px;
+}
+.picapau {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  margin: 1.4em;
+  padding: 1em;
+  font-style: sans-serif;
+}
+.pau {
+  font-size: 1.7em;
+}
+.retrato {
+  margin-left: 63.5%;
+  margin-top: -7%;
+}
+.taylor {
+  margin-top: -600px; /* Ajusta a margem superior para criar espaço entre as divs */
+}
+
+
+.teste {
+  font-size: 30px;
+  margin-top: 7%;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #007bff; /* Manter a cor original para links visitados */
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .body ,.right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* For mobile phones: */
+  .moldura-preta{
+    margin-top: 5%;
+    margin-left:5%; 
+  }
+
+.taylor{
+  margin-top: 20%;
+}
+.ladin {
+  margin-top: 0px; 
+  margin-left: 0%;
+}
+
+
+
+
+}

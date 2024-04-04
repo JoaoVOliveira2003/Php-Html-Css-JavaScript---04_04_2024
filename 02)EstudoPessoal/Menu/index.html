@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+</head>
+<body>
+    <section class="menu">
+        <div class="title">
+            <h2>nosso menu</h2>
+            <div class="underline"></div>
+        </div>
+        <!-- Botões de filtro -->
+        <div class="btn-container">
+            <button type="button" class="filter-btn" data-id="all"></button>
+            <button type="button" class="filter-btn" data-id="breakfast">
+              café da manhã
+            </button>
+            <button type="button" class="filter-btn" data-id="lunch">almoço</button>
+            <button type="button" class="filter-btn" data-id="shakes">
+              shakes
+            </button>
+        </div>
+        <!-- Itens do menu -->
+        <div class="section-center">
+        <!-- item individual -->
+        <article class="menu-item">
+            <img src="./menu-item.jpeg" alt="menu-item" class="photo">
+            <div class="item-info">
+                <header>
+                    <h4>panqueca</h4>
+                    <h4 class="price">$15</h4>
+                </header>
+                <p class="item-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magni, dolores ut officia deleniti minus? Provident recusandae delectus, ipsa dolor veritatis ullam ab sint asperiores nemo consequuntur a fuga facilis?
+                </p>
+            </div>
+        </article>
+
+        </div>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

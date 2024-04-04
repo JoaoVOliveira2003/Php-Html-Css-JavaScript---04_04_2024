@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .interactive-area {
+      font: normal 20pt arial;
+      background: green;
+      color: white;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="interactive-area">
+  interaja...
+</div>
+
+<script>
+  var area = document.querySelector('.interactive-area');
+
+  area.addEventListener('click', function() {
+    area.innerText = 'Clicou';
+  });
+
+  area.addEventListener('mouseenter', function() {
+    area.innerText = 'Entrou';
+  });
+
+  area.addEventListener('mousedown', function() {
+    area.innerText = 'Saiu!';
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+body {
+  font: normal 15pt arial;
+  background-color: #221A1A;
+  color: #ffffff;
+}
+
+section {
+  background-color: #3B3837;
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+.amarelo {
+  background-color: #bb9705ef; /* Adiciona o fundo amarelo */
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amarelo img {
+  display: block;
+}
+
+
+
+.amarelo img {
+  display: block;
+}
+
+p{
+  font-family: Young Serif;
+}
+
+.texto1{
+margin-top: -300px;
+margin-left: 400px;
+}
+
+.amarelo2 {
+  background-color: #bb9705ef; /* Adiciona o fundo amarelo */
+  width: 500px;
+  height: 500px;
+  margin-top: 225px;
+  margin-left: 570px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto2 {
+  margin-top: 350px;
+  margin-left: 130px;
+  position: absolute; 
+}
+
+
+.amarelo img, .amarelo2 img {
+    display: block;
+}
+  
+
+
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .body ,.right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* For mobile phones: */
+  .moldura-preta{
+    margin-top: 5%;
+    margin-left:5%; 
+  }
+
+.taylor{
+  margin-top: 20%;
+}
+.ladin {
+  margin-top: 0px; 
+  margin-left: 0%;
+}
+
+
+
+
+}
+
+
+.container2 {
+  position: relative;
+  padding: 15px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.gallery-wrapper {
+  overflow-x: auto;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  color: #fff;
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+  opacity: 0.1;
+  cursor: pointer;
+  border: none;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.arrow-right {
+  right: 0;
+  left: auto;
+  text-align: right;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.item {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out;
+  opacity: 0.5;
+}
+
+.current-item {
+  opacity: 1;
+}
+
+/* This is from w3schools */
+/* 
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.gallery-wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cyan {
+  background: cyan;
+}
+
+.deeppink {
+  background: deeppink;
+}
+
+.turquoise {
+  background: turquoise;
+}
+
+.darkblue {
+  background: darkblue;
+}
+
+.purple {
+  background: purple;
+}
+
+.tamanhobaixo{
+  height:75px;
+  width: 75px;
+}
+
+
+a {
+  color: white;
+  text-decoration: none; /* Remover sublinhado padrão dos links */
+}
+
+a:hover {
+  color: yellow; /* Cor quando o mouse passa sobre o link */
+}
+
+a:active {
+  color: orange; /* Cor quando o link está sendo clicado */
+}
+
+.logocima{
+  height: 250px;
+  width: 250px;
+  margin-left: 5%;
+  margin-top: 3%;
+  display: flex;
+}
+
+.cimaletra{
+  margin-left: 9%;
+}
+.cimaletras{
+  margin-top: -15%;
+  margin-left: 60%;
+  font: normal 20pt arial;
+}
+
+.cimaesquerda{
+align-items: center;
+margin-left: 22px;
+}

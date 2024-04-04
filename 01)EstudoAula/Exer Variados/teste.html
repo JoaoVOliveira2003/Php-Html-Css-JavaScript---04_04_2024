@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encontrar o Aluno Mais Alto e Mais Baixo</title>
+</head>
+<body>
+    <h1>Encontrar o Aluno Mais Alto e Mais Baixo</h1>
+
+    <div id="formulario">
+        <label for="nome">Nome do aluno:</label>
+        <input type="text" name="nome" id="nome"><br>
+        <label for="altura">Altura do aluno (em centímetros):</label>
+        <input type="number" name="altura" id="altura"><br><br>
+    </div>
+
+    <button onclick="adicionarAluno()">Adicionar Aluno</button><br><br>
+
+    <button onclick="encontrarAlunoMaisAltoMaisBaixo()">Calcular</button><br><br>
+
+    <div id="resultado"></div>
+
+    <script>
+        var alunos = [];
+
+        function adicionarAluno() {
+            var nomeAluno = document.getElementById("nome").value;
+            var alturaAluno = parseInt(document.getElementById("altura").value);
+
+            if (alunos.length < 5) {
+                alunos.push({ nome: nomeAluno, altura: alturaAluno });
+
+                document.getElementById("nome").value = "";
+                document.getElementById("altura").value = "";
+
+                if (alunos.length === 5) {
+                    document.getElementById("formulario").style.display = "none";
+                }
+            }
+        }
+
+        function encontrarAlunoMaisAltoMaisBaixo() {
+            if (alunos.length === 5) {
+                var alunoMaisAlto = alunos.reduce(function (a, b) {
+                    return a.altura > b.altura ? a : b;
+                });
+
+                var alunoMaisBaixo = alunos.reduce(function (a, b) {
+                    return a.altura < b.altura ? a : b;
+                });
+
+                var resultadoHTML = "Aluno mais alto:<br>";
+                resultadoHTML += "Nome do aluno: " + alunoMaisAlto.nome + "<br>";
+                resultadoHTML += "Altura: " + alunoMaisAlto.altura + " centímetros<br>";
+                resultadoHTML += "É o mais alto<br><br>";
+
+                resultadoHTML += "Aluno mais baixo:<br>";
+                resultadoHTML += "Nome do aluno: " + alunoMaisBaixo.nome + "<br>";
+                resultadoHTML += "Altura: " + alunoMaisBaixo.altura + " centímetros<br>";
+                resultadoHTML += "É o mais baixo<br>";
+
+                document.getElementById("resultado").innerHTML = resultadoHTML;
+            } else {
+                alert("Por favor, adicione informações para 5 alunos antes de calcular.");
+            }
+        }
+    </script>
+</body>
+</html>

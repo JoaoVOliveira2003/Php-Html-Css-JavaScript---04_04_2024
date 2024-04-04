@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Área de um Triângulo</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios para entregar</h1>
+    </header>
+
+    <section> 
+        <div>
+            <p>1. Escrever um algoritmo que lê 5 valores para a, um de cada vez, 
+            e conta quantos destes valores são negativos, escrevendo na tela esta informação.</p>
+        
+            <label for="numA">Insira Número A:</label>
+            <input type="number" name="num" id="numA"> <br>
+            <label for="numB">Insira Número B:</label>
+            <input type="number" name="num" id="numB"> <br>
+            <label for="numC">Insira Número C:</label>
+            <input type="number" name="num" id="numC"><br>
+            <label for="numD">Insira Número D:</label>
+            <input type="number" name="num" id="numD"><br>
+            <label for="numE">Insira Número E:</label>
+            <input type="number" name="num" id="numE"><br>
+            
+            <input type="button" value="FAZER" onclick="exer1()">
+            <p id="resul1"></p> 
+        </div>
+
+        <hr>
+    
+        <div>
+            <p>2. Um motorista deseja colocar no seu tanque X reais de gasolina. <br>Escreva um algoritmo para ler o
+            preço do litro da gasolina e o valor do pagamento, e exibir quantos litros ele conseguiu colocar no
+            tanque.</p>
+    
+            <label for="preco">Preço do litro da gasolina:</label> 
+            <input type="number" name="num" id="preco"><br>
+            <label for="pago">Quantos reais:</label>
+            <input type="number" name="num" id="pago"><br><br>
+            <input type="button" value="FAZER" onclick="exer2()">
+            <p id="resul2"></p> 
+        </div>
+      
+        <hr>
+
+        <div>
+            <p>3. Escrever um algoritmo que lê 5 conjuntos de 2 valores, o primeiro representando o nome de um
+            aluno e o segundo representando a sua altura em centímetros. Encontre o aluno mais alto e o
+            mais baixo e exiba seus nomes, alturas e uma mensagem dizendo se é o mais alto ou
+            o mais baixo.</p>
+        
+            <!-- Aluno 1 -->
+            <label for="nomeAluno1">Nome do Aluno 1:</label>
+            <input type="text" id="nomeAluno1"><br>
+            <label for="alturaAluno1">Altura do Aluno 1 (em cm):</label>
+            <input type="number" id="alturaAluno1"><br><br>
+        
+            <!-- Aluno 2 -->
+            <label for="nomeAluno2">Nome do Aluno 2:</label>
+            <input type="text" id="nomeAluno2"><br>
+            <label for="alturaAluno2">Altura do Aluno 2 (em cm):</label>
+            <input type="number" id="alturaAluno2"><br><br>
+        
+            <!-- Aluno 3 -->
+            <label for="nomeAluno3">Nome do Aluno 3:</label>
+            <input type="text" id="nomeAluno3"><br>
+            <label for="alturaAluno3">Altura do Aluno 3 (em cm):</label>
+            <input type="number" id="alturaAluno3"><br><br>  
+            <!-- Aluno 4 -->
+            <label for="nomeAluno4">Nome do Aluno 4:</label>
+            <input type="text" id="nomeAluno4"><br>
+            <label for="alturaAluno4">Altura do Aluno 4 (em cm):</label>
+            <input type="number" id="alturaAluno4"><br>
+     <br>   
+            <label for="nomeAluno5">Nome do Aluno 5:</label>
+            <input type="text" id="nomeAluno5"><br>
+            <label for="alturaAluno5">Altura do Aluno 5 (em cm):</label>
+            <input type="number" id="alturaAluno5"><br><br>
+        
+            <button onclick="exer3()">FAZER</button>
+        
+            <div id="resul3">
+            </div>
+        </div>
+        
+        
+        <hr>
+
+        <div>
+            <p> 4. Escrever um algoritmo que escreve a soma dos números entre 0 e 100.</p>
+    
+            <input type="button" value="FAZER" onclick="exer4()">
+            <p id="resul4"></p> 
+        </div>
+      
+        <hr>
+
+        <div>
+            <p>5. Escrever um algoritmo que escreve a soma dos números pares entre 0 e 100.</p>
+            <input type="button" value="FAZER" onclick="exer5()">
+            <p id="resul5"></p> 
+        </div>
+        
+        <hr>
+
+        <div>
+            <p>6. Escrever um algoritmo que lê um número e calcula e escreve o seu fatorial.</p>
+  
+            <label for="numeroFatorial">Insira um número:</label>
+            <input type="number" name="num" id="numeroFatorial"><br><br>
+            <input type="button" value="FAZER" onclick="exer6()">
+            <p id="resul6"></p> 
+        </div>
+
+        <hr>
+
+        <div>
+            <p>7. Escrever um algoritmo que lê um número não determinados de valores N, todos inteiros e
+            positivos, um de cada vez, e calcule e escreva a média aritmética dos valores lidos.</p>
+           
+            <input type="number" id="numeroEntrada" placeholder="Digite um número"> <br>
+            <button onclick="adicionarNumero()">Adicionar</button><br>
+            <button onclick="calcularMedia()">Calcular Média</button>
+        
+            <div id="resultadoMedia"></div>
+        </div>
+
+        <hr>
+  
+        <div>
+            <p>8. Escrever um algoritmo que lê 1 número e para cada n lido, escreva a tabuada do número n.</p>
+  
+            <label for="numeroTabuada">Insira o número que deseja ver a tabuada:</label>
+            <input type="number" name="num" id="numeroTabuada"><br><br>
+            <input type="button" value="FAZER" onclick="exer8()">
+            <p id="resul8"></p> 
+        </div>
+      
+        <hr>
+    </section>
+
+    <footer>@João_de_oliveira_</footer>
+    <script src="java.js"></script>
+</body>
+</html>

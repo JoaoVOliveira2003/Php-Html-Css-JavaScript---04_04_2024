@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<h1>Iniciando estudo em DOM</h1>
+<p>aqui vai resultado</p>
+<p>aprendendo a usar <strong>dom</strong> </p>
+<div>clique em mim</div>
+<div id="msg">SOU O ID GUY</div>
+<div class="bococa">em class</div>
+
+<script>
+
+ // voce cria uma variavel  com esse DOM,pegando uma parte já existente 
+ //do site cria uma varivel com esta parte 
+var p1=window.document.getElementsByTagName('p')[1];
+var d =window.document.getElementById('msg')
+d.style.background= 'green';
+window.document.write('esta escrito :'  + p1.innerHTML)
+var a=window.document.getElementsByClassName( 'bococa')
+a.style.background='red';
+
+</script>
+
+</body>
+</html>
